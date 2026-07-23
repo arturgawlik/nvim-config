@@ -44,7 +44,10 @@ return {
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
-        wrap = false, -- sets vim.opt.wrap
+        -- changed by me 23.07.26 - but not working (default was wrap = false)
+        wrap = true, -- sets vim.opt.wrap
+        linebreak = true,
+        noequalalways = false,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
