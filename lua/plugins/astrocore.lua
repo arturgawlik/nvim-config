@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -47,7 +47,7 @@ return {
         -- changed by me 23.07.26 - but not working (default was wrap = false)
         wrap = true, -- sets vim.opt.wrap
         linebreak = true,
-        noequalalways = false,
+        equalalways = false,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -82,6 +82,14 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+        
+      },
+      -- added by me 02.07.26
+      t = {
+        ["<Esc>"]  = { "<C-\\><C-N>", desc = "Terminal normal mode" },
+        ["jj"]     = { "<C-\\><C-N>", desc = "Terminal normal mode" },
+        ["<C-Up>"] = { "<C-\\><C-N><C-Up>", desc = "Terminal normal and up" },
+        ["<C-Down>"] = { "<C-\\><C-N><C-Down>", desc = "Terminal normal and down" },
       },
     },
   },
