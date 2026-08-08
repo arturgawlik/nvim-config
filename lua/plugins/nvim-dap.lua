@@ -30,6 +30,7 @@ return {
       },
     }
 
+    -- docs of avaialbe options here https://github.com/microsoft/vscode-js-debug/blob/main/OPTIONS.md
     dap.configurations.typescript = {
       {
         -- The first three options are required by nvim-dap
@@ -45,10 +46,13 @@ return {
 				name = "Attach",
 				cwd = "${workspaceFolder}",
 				continueOnAttach = true,
-				skipFiles = {
-					"<node_internals>/**",
-					"**/cls-hooked/**",
-				},
+				restart = true,
+			  -- for node_modules I don't want to resolve source maps
+			  -- (I want to debug thier source code)
+			  resolveSourceMapLocations = {
+          "${workspaceFolder}/**",
+          "!**/node_modules/**"
+        },
 			},
     }
   end,
