@@ -42,7 +42,8 @@ return {
       opt = { -- vim.opt.<key>
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
-        spell = false, -- sets vim.opt.spell
+        -- changed by me 03.08.26
+        spell = true, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         -- changed by me 23.07.26 - but not working (default was wrap = false)
         wrap = true, -- sets vim.opt.wrap
