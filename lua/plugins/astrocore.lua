@@ -87,7 +87,6 @@ return {
       },
       -- added by me 02.07.26
       t = {
-        ["<Esc>"]  = { "<C-\\><C-N>", desc = "Terminal normal mode" },
         ["jj"]     = { "<C-\\><C-N>", desc = "Terminal normal mode" },
         ["<C-Up>"] = { "<C-\\><C-N><C-Up>", desc = "Terminal normal and up" },
         ["<C-Down>"] = { "<C-\\><C-N><C-Down>", desc = "Terminal normal and down" },
