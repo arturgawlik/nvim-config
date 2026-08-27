@@ -1,5 +1,5 @@
 -- added by me 20.08.26 
-return { 
+return {
     {
         "nvim-neo-tree/neo-tree.nvim",
         opts = {
@@ -9,7 +9,21 @@ return {
                     hide_dotfiles = false,
                     hide_hidden = false,
                 }
+            },
+            default_component_configs = {
+                file_size = {
+                    enabled = false,
+                },
+                type = {
+                    enabled = false,
+                },
+                last_modified = {
+                    enabled = false,
+                },
+                created = {
+                    enabled = false,
+                },
             }
         }
-    }   
+    }
 }
