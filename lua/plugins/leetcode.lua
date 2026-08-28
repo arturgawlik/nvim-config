@@ -14,7 +14,7 @@ return {
     lang = "typescript",
     storage = {
       -- points to repo catalog
-      home = "/home/ag/git/let-code-tasks"
+      home = "/home/ag/git/leetcode"
       -- cache = vim.fn.stdpath("cache") .. "/leetcode",
     },
     editor = {
