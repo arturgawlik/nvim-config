@@ -83,11 +83,11 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        
       },
       -- added by me 02.07.26
       t = {
         ["jj"]     = { "<C-\\><C-N>", desc = "Terminal normal mode" },
+        ["jk"]     = { "<C-\\><C-N>", desc = "Terminal normal mode" },
         ["<C-Up>"] = { "<C-\\><C-N><C-Up>", desc = "Terminal normal and up" },
         ["<C-Down>"] = { "<C-\\><C-N><C-Down>", desc = "Terminal normal and down" },
       },
