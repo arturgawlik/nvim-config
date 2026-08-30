@@ -43,7 +43,7 @@ return {
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         -- changed by me 03.08.26
-        spell = true, -- sets vim.opt.spell
+        spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         -- changed by me 23.07.26 - but not working (default was wrap = false)
         wrap = true, -- sets vim.opt.wrap
@@ -83,11 +83,11 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        
       },
       -- added by me 02.07.26
       t = {
         ["jj"]     = { "<C-\\><C-N>", desc = "Terminal normal mode" },
+        ["jk"]     = { "<C-\\><C-N>", desc = "Terminal normal mode" },
         ["<C-Up>"] = { "<C-\\><C-N><C-Up>", desc = "Terminal normal and up" },
         ["<C-Down>"] = { "<C-\\><C-N><C-Down>", desc = "Terminal normal and down" },
       },
