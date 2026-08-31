@@ -1,6 +1,7 @@
 return {
   {
     "igorlfs/nvim-dap-view",
+    enabled = false,
     opts = {
       winbar = {
         -- 'exceptions' removed
@@ -11,7 +12,7 @@ return {
         }
       },
       windows = {
-        position = "right",
+        position = "below",
         size = 0.4,
       },
       -- automatically opens and close when session is started/finished
