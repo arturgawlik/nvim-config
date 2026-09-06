@@ -39,6 +39,14 @@ return {
   },
   { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- by default disabled
+      enabled = false,
+    },
+  },
 
   -- game
   { import = "astrocommunity.game.leetcode-nvim" },
