@@ -74,4 +74,8 @@ return {
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   -- sql
   { import = "astrocommunity.pack.full-dadbod" },
+  -- xml
+  { import = "astrocommunity.pack.xml" },
+  -- json
+  { import = "astrocommunity.pack.json" },
 }

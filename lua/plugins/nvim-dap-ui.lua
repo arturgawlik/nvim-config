@@ -3,7 +3,7 @@
 return {
   {
     "rcarriga/nvim-dap-ui",
-    enabled = true,
+    enabled = false,
     opts = {
       expand_lines = true,
       controls = { enabled = false }, -- no extra play/step buttons
