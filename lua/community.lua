@@ -40,7 +40,12 @@ return {
   { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
 
+  -- media
+  { import = "astrocommunity.media.image-nvim" },
+
   -- languages
   -- markdown
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  -- sql
+  { import = "astrocommunity.pack.full-dadbod" },
 }
