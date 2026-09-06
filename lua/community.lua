@@ -40,6 +40,26 @@ return {
   { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
 
+  -- game
+  { import = "astrocommunity.game.leetcode-nvim" },
+  {
+    "kawre/leetcode.nvim",
+    opts = {
+      lang = "typescript",
+      storage = {
+        -- points to repo catalog
+        home = "/home/ag/git/leetcode",
+      },
+      editor = {
+        reset_previous_code = false, ---@type boolean
+      },
+      description = {
+        position = "right",
+        width = "40%", ---@type lc.size
+      },
+    },
+  },
+
   -- media
   { import = "astrocommunity.media.image-nvim" },
 
