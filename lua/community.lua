@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
@@ -8,5 +8,39 @@ if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  -- import/override with your plugins folder
+
+  -- colorscheme
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+  },
+
+  -- search and replace
+  {
+    import = "astrocommunity.search.grug-far-nvim",
+  },
+  {
+    "MagicDuck/grug-far.nvim",
+    opts = {
+      minSearchChars = 1,
+    },
+  },
+
+  -- git
+  { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.codediff-nvim" },
+  {
+    "esmuellert/codediff.nvim",
+    -- this specific version because otherwise there is bug
+    -- in integration with neogit - that needs to be fixed in neogit
+    tag = "v2.67.1",
+  },
+  { import = "astrocommunity.git.openingh-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
+
+  -- languages
+  -- markdown
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 }

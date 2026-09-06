@@ -7,10 +7,10 @@ return {
 
       -- Disable diffchar default keymaps.
       -- See: https://github.com/rickhowe/diffchar.vim/issues/21
-      vim.cmd([[
+      vim.cmd [[
         nmap <leader>g <Nop>
         nmap <leader>p <Nop>
-      ]])
+      ]]
     end,
-  }
+  },
 }
