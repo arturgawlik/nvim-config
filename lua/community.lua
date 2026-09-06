@@ -35,6 +35,7 @@ return {
     "esmuellert/codediff.nvim",
     -- this specific version because otherwise there is bug
     -- in integration with neogit - that needs to be fixed in neogit
+    -- there is issue https://github.com/NeogitOrg/neogit/issues/2008 for that
     tag = "v2.67.1",
   },
   { import = "astrocommunity.git.openingh-nvim" },
