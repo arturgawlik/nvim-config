@@ -51,11 +51,11 @@ return {
         home = "/home/ag/git/leetcode",
       },
       editor = {
-        reset_previous_code = false, ---@type boolean
+        reset_previous_code = false,
       },
       description = {
         position = "right",
-        width = "40%", ---@type lc.size
+        width = "40%",
       },
     },
   },
@@ -67,6 +67,8 @@ return {
   { import = "astrocommunity.media.image-nvim" },
 
   -- languages
+  -- typescript
+  { import = "astrocommunity.pack.typescript" },
   -- markdown
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   -- sql
