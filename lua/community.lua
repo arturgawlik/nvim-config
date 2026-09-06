@@ -7,7 +7,6 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
 
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
@@ -68,6 +67,8 @@ return {
   { import = "astrocommunity.media.image-nvim" },
 
   -- languages
+  -- lua
+  { import = "astrocommunity.pack.lua" },
   -- typescript
   { import = "astrocommunity.pack.typescript" },
   -- markdown
