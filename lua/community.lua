@@ -31,6 +31,17 @@ return {
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.codediff-nvim" },
   {
+    "emrearmagan/atlas.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons", -- optional but recommended
+      "MeanderingProgrammer/render-markdown.nvim", -- optional but recommended
+      "esmuellert/codediff.nvim", -- optional (PullRequest diff)
+    },
+    -- See Configuration below
+    ---@type AtlasConfig
+    opts = {},
+  },
+  {
     "esmuellert/codediff.nvim",
     -- this specific version because otherwise there is bug
     -- in integration with neogit - that needs to be fixed in neogit
