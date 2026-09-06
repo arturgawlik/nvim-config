@@ -60,6 +60,9 @@ return {
     },
   },
 
+  --session
+  { import = "astrocommunity.recipes.auto-session-restore" },
+
   -- media
   { import = "astrocommunity.media.image-nvim" },
 
