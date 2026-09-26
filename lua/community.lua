@@ -173,4 +173,8 @@ return {
   { import = "astrocommunity.pack.xml" },
   -- json
   { import = "astrocommunity.pack.json" },
+  -- rust
+  { import = "astrocommunity.pack.rust" },
+  -- cpp
+  { import = "astrocommunity.pack.cpp" },
 }
